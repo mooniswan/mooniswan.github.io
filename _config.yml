@@ -24,10 +24,7 @@ description: >- # used by seo meta and the atom feed
 url: "https://mooniswan.github.io"
 
 github:
-  username: mooniswan # change to your github username
-
-twitter:
-  username: twitter_username # change to your twitter username
+  username: mooniswan
 
 social:
   name: Chaewon Mun
