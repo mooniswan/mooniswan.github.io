@@ -4,6 +4,7 @@ source "https://rubygems.org"
 
 gemspec
 
+gem "kramdown"
 gem "kramdown-math-katex"
 
 group :test do
