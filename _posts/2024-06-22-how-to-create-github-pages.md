@@ -121,14 +121,14 @@ git push
 {: .nolineno }
 
 ## Build 오류 해결
-그런데 위의 푸쉬과정에서 Github Actions 탭에서 확인한 결과 build 과정에서 에러가 발생해 사이트가 배포가 안되는 걸 확인했다.
+위 푸쉬과정 중 Github Actions 탭에서 확인한 결과 build 과정에서 에러가 발생해 사이트가 배포가 안되는 걸 확인했다.
 Test site 과정에서 _site 폴더의 html 파일에서<br/>
 <span style="color:red"> internal script reference /app.min.js does not exist </span><br/>
 위와 같은 오류내용때문에 빌드가 실패되었다.
 
-따라서 Pages에서 Source로 `Github Actions`을 선택했을 때 생성된 `pages-deploy.yml` 파일에서 Test site 과정을 아예 주석처리 해서 오류를 해결했다. 
+어차피 게시물을 작성하고 로컬서버에서 확인 후 최종본을 배포하기 때문에 <br/>
+test site 부분이 필요없다고 가정하고 .github/workflows 로 이동해 `pages-deploy.yml`, `ci.yml` 파일에서 Test site 과정을 아예 주석처리 해서 오류를 해결했다. 
 
-아래와 같이 .github/workflows/pages-deploy.yml에 들어가 edit this file을 통해 Test site 과정을 아예 주석처리 해서 파일을 수정하고 
 ![](/assets/img/img2.png){: .shadow }
 
 commit changes -> sign off and commit changes를 통해 저장해주면 된다. 
