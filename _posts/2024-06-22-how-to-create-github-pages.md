@@ -116,7 +116,7 @@ Settings 탭의 Pages에 들어가 Build and deployment 부분의 Source를 `Git
 ```zsh
 git add .
 git commit -m 'test'
-git push
+git push origin master
 ```
 {: .nolineno }
 
